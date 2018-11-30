@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vU0-lS-Q8B">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LaunchVC-->
+        <scene sceneID="CFB-2l-SH4">
+            <objects>
+                <viewController id="F1v-7v-8Sx" customClass="LaunchVC" customModule="SplashAnimation_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RtP-Um-OkD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itunes" translatesAutoresizingMaskIntoConstraints="NO" id="95N-fa-MDr">
+                                <rect key="frame" x="107.5" y="253.5" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="dV5-KG-7qc"/>
+                                    <constraint firstAttribute="width" secondItem="95N-fa-MDr" secondAttribute="height" id="p4T-i2-6ju"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YR-hU-Aq6">
+                                <rect key="frame" x="147.5" y="423.5" width="80.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5YR-hU-Aq6" firstAttribute="centerX" secondItem="RtP-Um-OkD" secondAttribute="centerX" id="Owc-Kg-jTD"/>
+                            <constraint firstItem="95N-fa-MDr" firstAttribute="centerY" secondItem="RtP-Um-OkD" secondAttribute="centerY" id="Wmf-ar-wPB"/>
+                            <constraint firstItem="95N-fa-MDr" firstAttribute="centerX" secondItem="RtP-Um-OkD" secondAttribute="centerX" id="aqH-za-hAd"/>
+                            <constraint firstItem="5YR-hU-Aq6" firstAttribute="top" secondItem="95N-fa-MDr" secondAttribute="bottom" constant="10" id="dCh-Zw-sQT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KRw-2k-Wdc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5tg-dF-9lx"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="5YR-hU-Aq6" id="Tth-0F-yTH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLm-vE-CNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2824.8000000000002" y="-2860.1199400299852"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hJJ-5m-Ws8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vU0-lS-Q8B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fw6-r2-n3t">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="F1v-7v-8Sx" kind="relationship" relationship="rootViewController" id="h7x-kJ-ANB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="720-vj-WDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885.5999999999999" y="-2860.1199400299852"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="itunes" width="204.80000305175781" height="204.80000305175781"/>
+    </resources>
+</document>
